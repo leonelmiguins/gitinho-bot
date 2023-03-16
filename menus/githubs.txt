@@ -1,8 +1,8 @@
  ⠸ *GITHUBS:*
 
- ➥ user: *Leonel Miguins*
-git: https://github.com/leonelmiguins tel: *+55 45 991585849*
- ➥ user: *Hilton Uamba*
-git: https://github.com/Hilton-web tel: *+258 84 753 0518*
- ➥ user: *Manuel Cyrus*
-git: https://github.com/ManuelCyrus tel: *+244 927 944 541*
+ ➥ user: *leonelmiguins*
+git: https://github.com/leonelmiguins tel: *+5545991585849*
+ ➥ user: *Hilton-web *
+git: https://github.com/Hilton-web tel: *+258847530518*
+ ➥ user: *ManuelCyrus*
+git: https://github.com/ManuelCyrus tel: *+244927944541*
