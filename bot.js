@@ -1,4 +1,6 @@
-const { Client, LocalAuth, MessageMedia } = require('whatsapp-web.js');
+//criado por: Leonel Miguins, 2023
+
+const { Client, LocalAuth } = require('whatsapp-web.js');
 const qrcode = require('qrcode-terminal');
 const fs = require('fs');
 const console = require('console');
@@ -57,6 +59,12 @@ client.on('message', async (msg) => {
         msg.reply(data);
     }
 
+    if(msg.body === '$add-proj'){ 
+        let data = readFile('./menus/add-proj.txt')     
+        msg.reply(data);
+    
+    }
+
     if(msg.body === '$add-git'){ 
         let data = readFile('./menus/add-git.txt')        
         msg.reply(data);
@@ -73,7 +81,7 @@ client.on('message', async (msg) => {
 
         }else{
             let username = msg.body.substring(28)
-            data = data+`\n ➥ user: *${username}*\ngit: ${link} tel: *${tel}*`;
+            data = data+`\n ➥ user: *${username}*\ngit: ${link} tel: *+*96.${tel}*`;
             writeFile('./menus/githubs.txt', data);
             msg.reply('*✅ Perfil adicionado com sucesso!*')
         }
@@ -101,15 +109,12 @@ client.on('message', async (msg) => {
 //função para ler arquivos
 function readFile(file){
     let dados = fs.readFileSync(file, "utf8");
-     fs.close;
-   
-     return dados;
-  }
+    fs.close;
+    return dados;
+}
 
 function writeFile(arq, data) {
-
 fs.writeFile(arq, data, (err) => {
     if (err) throw err;
-  console.log('O arquivo foi criado!');
-});
+    });
 }

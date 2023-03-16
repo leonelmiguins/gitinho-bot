@@ -1,8 +1,12 @@
  ⠸ *PROJETOS ATUAIS:*
 
- ➥ Projeto: *Editor de Código em Nodejs*
-    Técnologias: *Javascript, Css, Html5, Nodejs*
-    Criador: *Leonel Miguins*
-    link: ""
-    membros: *2/5*
-    Status: *Aberto*
+ ➥  
+   Nome: *fenix-code-editor*
+   Descrição: *Editor de Código em Nodejs*
+   Técnologias: *Javascript, Css, Html5, Nodejs*
+   Criador: *Leonel Miguins*
+   Contato: *+45991585849*
+   link: *https://github.com/leonelmiguins/fenix-code-editor*
+   membros: *2/5*
+   Status: *Aberto*
+   Obs: *conhecimentos básicos, conta no github, ajudamos iniciantes.*

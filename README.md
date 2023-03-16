@@ -1,6 +1,11 @@
 # Sobre o bot
 
-<p>Este é um bot projetado para gerenciar um grupo do GitHub que visa promover a colaboração entre desenvolvedores, estudantes e entusiastas da tecnologia. O bot ajudará a facilitar a interação dos membros do grupo, permitindo que eles compartilhem seus projetos no GitHub, se conectem através do LinkedIn e criem oportunidades de networking.</p>
+<p>Este é um bot foi criado para gerenciar meu grupo GITHUBERs que visa promover a colaboração entre desenvolvedores, estudantes e entusiastas da tecnologia. O bot ajudará a facilitar a interação dos membros do grupo, permitindo que eles compartilhem seus projetos no GitHub, se conectem através do LinkedIn e criem oportunidades de networking.</p>
+
+# Sobre o Grupo
+
+<p>Grupo para todos aqueles que estão interessados em compartilhar seus projetos no GitHub, entrar em outros projetos para adicionar em seus portfólios e criar conexões através do LinkedIn. Este grupo é aberto para desenvolvedores, estudantes e entusiastas da tecnologia que desejam mostrar seus projetos, receber feedbacks, discutir tecnologias e criar oportunidades de networking.</p>
+<p>Você pode acessar o grupo no whatsapp [aqui]('https://chat.whatsapp.com/HFXrl1iE4LZ8z00Z3Q5n2o').</p>
 
 # funcionalidades
 

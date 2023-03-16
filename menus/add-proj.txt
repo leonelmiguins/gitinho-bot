@@ -1,0 +1,13 @@
+⠸ *ADICIONAR SEU PROJETO:*
+
+Preencha a Ficha corretamente e envie no pv do bot para analise:
+
+   *Nome:* [ Obrigatório ]
+   *Descrição:* [ Opcional ]
+   *Técnologias:* [ Obrigatório ]
+   *Criador:* [ Obrigatório ]
+   *Contato:* [ Obrigatório ]
+   *link:* [ Obrigatório ]
+   *membros:* [ Opcional ]
+   *Status:* [ Opcional ]
+   *Obs:* [ Opcional ]

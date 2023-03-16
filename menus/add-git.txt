@@ -1,9 +1,7 @@
 ⠸ *ADICIONAR SEU GITHUB:*
 
  ➥ Siga o exemplo de como adicionar seu link do github:
-
 *$add-git* <link-do-seu-perfil>
 
  ➥ *exemplo:*
-
 *$add-git* https://github.com/fulanoDeTal
