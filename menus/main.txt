@@ -1,0 +1,27 @@
+ 🤖    *gιтιηнσ вσт*      ⌉
+
+ ⠸ *COMANDOS GERAIS:*
+   
+  ➥ *$projetos* 
+   [ • _lista com projetos atuais_ ]
+  ➥ *$gits* 
+   [ • _link do github dos membros_ ]
+  ➥ *$regras*
+   [ • _regras do grupo_ ]
+  ➥ *$sobre* 
+   [ • _sobre o grupo_ ]
+
+⠸ *Comandos de Projetos:*
+
+  ➥ *$add-proj* 
+   [ • _criar um novo projeto_ ]
+  ➥ *$projetos* 
+   [ • _lista com projetos atuais_ ]
+
+ ⠸ *Comandos do githubs*
+
+   ➥ *$add-git* 
+   [ • _adiciona seu github a lista_ ]
+
+
+
