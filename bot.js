@@ -45,27 +45,27 @@ client.on('message', async (msg) => {
 
     }
 
-    if(msg.body === '$regras'){
+    if(msg.body === '$rules'){
         let data = readFile('./menus/rules.txt')
         msg.reply(data);
 
     }
 
-    if(msg.body === '$sobre'){
+    if(msg.body === '$about'){
         let data = readFile('./menus/about.txt')        
-        client.sendMessage(msg.from, data)
+        msg.reply(data);
 
     }
 
     if(msg.body === '$gits'){
         let data = readFile('./menus/githubs.txt')        
-        client.sendMessage(msg.from, data)
+        msg.reply(data);
 
     }
 
-    if(msg.body === '$projetos'){
+    if(msg.body === '$proj'){
         let data = readFile('./menus/projects.txt')        
-        client.sendMessage(msg.from, data)
+        msg.reply(data);
 
     }
 

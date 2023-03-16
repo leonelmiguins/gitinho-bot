@@ -1,0 +1,15 @@
+Olá! Seja bem-vindo(a) ao nosso grupo dedicado aos apaixonados por tecnologia e desenvolvimento!
+Aqui, você encontrará uma comunidade engajada em compartilhar conhecimentos, experiências e projetos no GitHub.
+
+Nosso objetivo é criar uma rede colaborativa e inspiradora, onde desenvolvedores, estudantes e entusiastas possam se conectar,
+trocar ideias e ampliar seus portfólios.
+
+Sinta-se à vontade para apresentar seus projetos, participar de discussões sobre tecnologias,
+receber feedbacks construtivos e expandir sua rede profissional através do LinkedIn.
+
+ ⠸ *EXPLORE O BOT:*
+
+  ➥ *$start*
+   [ • _inicia o bot_ ]
+   ➥ *$rules*
+   [ • _veja as regras do grupo_ ]

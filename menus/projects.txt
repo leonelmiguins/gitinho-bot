@@ -1,7 +1,6 @@
  ⠸ *PROJETOS ATUAIS:*
 
- ➥ *1.*
-    Projeto: *Editor de Código em Nodejs*
+ ➥ Projeto: *Editor de Código em Nodejs*
     Técnologias: *Javascript, Css, Html5, Nodejs*
     Criador: *Leonel Miguins*
     link: ""
