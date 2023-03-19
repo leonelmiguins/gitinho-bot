@@ -2,18 +2,28 @@
 
  ⠸ *COMANDOS GERAIS:*
    
-  ➥ *$proj* 
-   [ • _lista com projetos atuais_ ]
-  ➥ *$gits* 
-   [ • _link do github dos membros_ ]
   ➥ *$rules*
    [ • _regras do grupo_ ]
   ➥ *$about* 
    [ • _sobre o grupo_ ]
+  ➥ *$link* 
+   [ • _link deste grupo_ ]
 
-⠸ *COMANDOS ADD:*
+⠸ *COMANDOS GITHUB:*
 
-  ➥ *$add-proj* 
-   [ • _criar um novo projeto_ ]
-  ➥ *$add-git* 
+  ➥ *$gits* 
+   [ • _link do github dos membros_ ]
+  ➥ *$git-add* 
    [ • _adiciona seu github a lista_ ]
+  ➥ *$git-info* 
+   [ • _pegue informações de um usuario via link_ ]
+
+⠸ *COMANDOS PROJETOS:*
+
+  ➥ *$proj* 
+   [ • _lista com projetos atuais_ ]
+  ➥ *$proj-add* 
+   [ • _criar um novo projeto_ ]
+
+
+

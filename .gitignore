@@ -1,5 +1,5 @@
 # Ignore a pasta node_modules
 node_modules
 
-# Ignore a pasta node_modules
+# Ignore a pasta .wwebjs_auth
 .wwebjs_auth

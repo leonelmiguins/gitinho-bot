@@ -2,11 +2,11 @@
 
  ➥  
    Nome: *fenix-code-editor*
-   Descrição: *Editor de Código em Nodejs*
+   Descrição: *Editor de Código.*
    Técnologias: *Javascript, Css, Html5, Nodejs*
    Criador: *Leonel Miguins*
    Contato: *+45991585849*
    link: *https://github.com/leonelmiguins/fenix-code-editor*
-   membros: *2/5*
-   Status: *Aberto*
+   membros: *4/5*
+   Status: *Projeto Fechado*
    Obs: *conhecimentos básicos, conta no github, ajudamos iniciantes.*
