@@ -1,0 +1,38 @@
+ 🤖    *gιтιηнσ вσт*      ⌉
+
+ ⠸ *COMANDOS GERAIS:*
+   
+  ➥ *$cursos* [ _Em desenvolvimento!_ ]
+  📁 [ • _cursos rápidos para inicinates_ ]
+  ➥ *$rules*
+  👮 [ • _regras do grupo_ ]
+  ➥ *$about* 
+  📄 [ • _sobre o grupo_ ]
+  ➥ *$links* 
+  📎 [ • _links úteis_ ]
+
+⠸ *COMANDOS GITHUB:*
+
+  ➥ *$gits* 
+  🐈 [ • _link do github dos membros_ ]
+  ➥ *$git-add* 
+  🐈 [ • _adiciona seu github a lista_ ]
+  ➥ *$git-info* 
+  🐈 [ • _pegue informações de um usuario via link_ ]
+
+⠸ *COMANDOS PROJETOS:*
+
+  ➥ *$proj* 
+  📦 [ • _lista com projetos atuais_ ]
+  ➥ *$proj-add* 
+  📦 [ • _criar um novo projeto_ ]
+
+⠸ *ADMINISTRATIVO:*
+
+  ➥ *$g-gp* 
+  🔒 [ • _gerenciar grupo_ ]
+  ➥ *$g-bot* 
+  🔒 [ • _gerenciar bot_ ]
+
+
+

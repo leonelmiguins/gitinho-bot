@@ -10,6 +10,6 @@ receber feedbacks construtivos e expandir sua rede profissional através do Link
  ⠸ *EXPLORE O BOT:*
 
   ➥ *$start*
-   [ • _inicia o bot_ ]
-   ➥ *$rules*
-   [ • _veja as regras do grupo_ ]
+   🚀 [ • _inicia o bot_ ]
+  ➥ *$rules*
+   👮 [ • _veja as regras do grupo_ ]

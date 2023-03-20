@@ -21,88 +21,83 @@ client.on('authenticated', () => {
 });
  
 client.on('ready', () => {
-    console.log(' rodando!');
+    console.log('Gitinho bot rodando!');
 });
 
-//menssagem de boas-vindas ao novo membro
 client.on('group_join', (notification) => {
-    let wellcome = readFile('./menus/wellcome.txt')
+    let wellcome = readFile('./txt/wellcome.txt')
     notification.reply(wellcome);
 });
 
 
 client.on('message', async (msg) => {
     
-
     if(msg.body === '$menu' || msg.body === '$start'){
-        let data = readFile('./menus/main.txt')
+        let data = readFile('./txt/main.txt')
         msg.reply(data);
     }
 
-    if(msg.body === '$rules'){
-        let data = readFile('./menus/rules.txt')
+    if(msg.body === '$rules') {
+        let data = readFile('./txt/rules.txt')
         msg.reply(data);
     }
 
-    if(msg.body === '$about'){
-        let data = readFile('./menus/about.txt')        
+    if(msg.body === '$about') {
+        let data = readFile('./txt/about.txt')        
         msg.reply(data);
     }
 
-    if(msg.body === '$gits'){
-        let data = readFile('./menus/githubs.txt')        
+    if(msg.body === '$gits') {
+        let data = readFile('./txt/githubs.txt')        
         msg.reply(data);
     }
 
-    if(msg.body === '$proj'){
-        let data = readFile('./menus/projects.txt')        
+    if(msg.body === '$proj') {
+        let data = readFile('./txt/projects.txt')        
         msg.reply(data);
     }
 
-    if(msg.body === '$proj-add'){ 
-        let data = readFile('./menus/add-proj.txt')     
+    if(msg.body === '$proj-add') { 
+        let data = readFile('./txt/add-proj.txt')     
         msg.reply(data);
-    
     }
 
-    if(msg.body === '$git-add'){ 
-        let data = readFile('./menus/add-git.txt')        
+    if(msg.body === '$git-add') { 
+        let data = readFile('./txt/add-git.txt')        
         msg.reply(data);
-    
+    }
+
+    if(msg.body === '$links') { 
+        let data = readFile('./txt/links.txt')   
+        msg.reply(data);
     }
 
     if(msg.body.includes('https://github.com/') && msg.body.includes('$git-info')) {
         let username = msg.body.substring(29)
         let userInfo = getProfileGithub(username);
-        msg.reply(`*user:* ${(await userInfo).username}\n*bio:* ${(await userInfo).bio}\n*location:* ${(await userInfo).location}\n*followers:* ${(await userInfo).followers}\n📦 *repositories:* ${(await userInfo).publicRepos}\n`)
-
+        let text = `👤 *user:* ${(await userInfo).username}\n
+                    📕 *bio:* ${(await userInfo).bio}\n
+                    🌎 *location:* ${(await userInfo).location}\n
+                    👥 *followers:* ${(await userInfo).followers}\n
+                    📦 *repositories:* ${(await userInfo).publicRepos}`
+        msg.reply(text)
     }
 
-    if(msg.body.includes('https://github.com/') && msg.body.includes('$git-add')){
-        let tel = ((await msg.getContact()).id._serialized).substring(0, 12);
-        let link = msg.body.substring(9);
-        let data = readFile('./menus/githubs.txt');
-        
-        if(data.includes(link)){
-          msg.reply('*⚠ Esse perfil já está cadastrado em nossa base de dados!*')
-          }else{
-            let username = msg.body.substring(28)
-            let userInfo = getProfileGithub(username);
-            data = data+`\n ➥ user: *${(await userInfo).username}*\ngit: ${link} tel: *+${tel}*`;
-            writeFile('./menus/githubs.txt', data);
-            msg.reply(`*user:* ${(await userInfo).username}\n*bio:* ${(await userInfo).bio}\n*location:* ${(await userInfo).location}\n*followers:* ${(await userInfo).followers}\n📦 *repositories:* ${(await userInfo).publicRepos}\n`)
-            msg.reply("*✅ Perfil adicionado com sucesso!*");
+    if (msg.body.includes('https://github.com/') && msg.body.includes('$git-add')) {
+        const tel = ((await msg.getContact()).id._serialized).substring(0, 12);
+        const link = msg.body.substring(9);
+        const data = await readFile('./txt/githubs.txt', 'utf-8');
+      
+        if (data.includes(link)) {
+          msg.reply('*⚠ Esse perfil já está cadastrado em nossa base de dados!*');
+        } else {
+          const username = msg.body.substring(28);
+          const userInfo = await getProfileGithub(username);
+          const newEntry = `➥ user: *${userInfo.username}*\ngit: ${link} tel: *+${tel}*`;
+          const newData = data + '\n' + newEntry;
+          await writeFile('./txt/githubs.txt', newData);
+          msg.reply('*✅ Perfil adicionado com sucesso!*');
         }
-
-    }
-
-    // Obtem o link do grupo githubers
-    if(msg.body === "$link") {
-        const chat = await msg.getChat();
-        const chatname = chat.name;
-        const inviteLink = 'https://chat.whatsapp.com/HFXrl1iE4LZ8z00Z3Q5n2o';
-        msg.reply(`O link de convite do grupo *${chatname}* é: *https://chat.whatsapp.com/${inviteLink}*`);
-
     }
 
     if (msg.body.includes('https://wa.me/') || msg.body.includes('chat.whatsapp.com/')) {
@@ -148,7 +143,6 @@ function getProfileGithub(user) {
             avatarUrl: data['avatar_url'],
             publicRepos: data['public_repos'],
             followers: data['followers'],
-            following: data['following']
         };
         return userInfo;
     });
