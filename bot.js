@@ -33,7 +33,7 @@ client.on('group_join', (notification) => {
 client.on('message', async (msg) => {
     
     if(msg.body === '$menu' || msg.body === '$start'){
-        let data = readFile('./txt/main.txt')
+        let data = readFile('./txt/menu.txt')
         msg.reply(data);
     }
 
@@ -75,29 +75,30 @@ client.on('message', async (msg) => {
     if(msg.body.includes('https://github.com/') && msg.body.includes('$git-info')) {
         let username = msg.body.substring(29)
         let userInfo = getProfileGithub(username);
-        let text = `👤 *user:* ${(await userInfo).username}\n
-                    📕 *bio:* ${(await userInfo).bio}\n
-                    🌎 *location:* ${(await userInfo).location}\n
-                    👥 *followers:* ${(await userInfo).followers}\n
-                    📦 *repositories:* ${(await userInfo).publicRepos}`
+        let text =
+            `👤 *user:* ${(await userInfo).username}\n
+            📕 *bio:* ${(await userInfo).bio}\n
+            🌎 *location:* ${(await userInfo).location}\n
+            👥 *followers:* ${(await userInfo).followers}\n
+            📦 *repositories:* ${(await userInfo).publicRepos}`
         msg.reply(text)
     }
 
     if (msg.body.includes('https://github.com/') && msg.body.includes('$git-add')) {
         const tel = ((await msg.getContact()).id._serialized).substring(0, 12);
         const link = msg.body.substring(9);
-        const data = await readFile('./txt/githubs.txt', 'utf-8');
-      
-        if (data.includes(link)) {
-          msg.reply('*⚠ Esse perfil já está cadastrado em nossa base de dados!*');
-        } else {
-          const username = msg.body.substring(28);
-          const userInfo = await getProfileGithub(username);
-          const newEntry = `➥ user: *${userInfo.username}*\ngit: ${link} tel: *+${tel}*`;
-          const newData = data + '\n' + newEntry;
-          await writeFile('./txt/githubs.txt', newData);
-          msg.reply('*✅ Perfil adicionado com sucesso!*');
-        }
+        const data = readFile('./txt/githubs.txt');
+        console.log(link)
+           if (data.includes(link)) {
+               msg.reply('*⚠ Esse perfil já está cadastrado em nossa base de dados!*');
+               } else {
+               const username = msg.body.substring(28);
+               const userInfo = await getProfileGithub(username);
+               const newEntry = `➥ user: *${userInfo.username}*\ngit: ${link} tel: *+${tel}*`;
+               const newData = data + '\n' + newEntry;
+               writeFile('./txt/githubs.txt', newData);
+               msg.reply('*✅ Perfil adicionado com sucesso!*');
+            }
     }
 
     if (msg.body.includes('https://wa.me/') || msg.body.includes('chat.whatsapp.com/')) {
@@ -147,6 +148,3 @@ function getProfileGithub(user) {
         return userInfo;
     });
 }
-
-
-

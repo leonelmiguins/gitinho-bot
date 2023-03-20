@@ -12,5 +12,9 @@ git: https://github.com/Felipeee404 tel: *+559193882978*
 git: https://github.com/FelipeSander30 tel: *+551195128178*
  ➥ user: *Leonel Miguins*
 git: https://github.com/leonelmiguins tel: *+554591585849*
- ➥ user: *null*
+ ➥ user: *Renny Soares*
 git: https://github.com/Rennysoares tel: *+554591585849*
+➥ user: *Shruog*
+git: https://github.com/Shruog tel: *+554591585849*
+➥ user: *karen pereira candido*
+git: https://github.com/karenbonk-98 tel: *+554591585849*

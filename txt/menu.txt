@@ -1,15 +1,19 @@
- 🤖    *gιтιηнσ вσт*      ⌉
+ ----------------------------
+     🤖    *gιтιηнσ вσт* 
+ ----------------------------
 
  ⠸ *COMANDOS GERAIS:*
    
-  ➥ *$cursos* [ _Em desenvolvimento!_ ]
-  📁 [ • _cursos rápidos para inicinates_ ]
+  ➥ *$cursos*
+  📁 [ • _cursos rápidos para iniciantes_ ]
   ➥ *$rules*
   👮 [ • _regras do grupo_ ]
   ➥ *$about* 
   📄 [ • _sobre o grupo_ ]
   ➥ *$links* 
   📎 [ • _links úteis_ ]
+  ➥ *$mural* 
+  📌 [ • _recados e avisos_ ]
 
 ⠸ *COMANDOS GITHUB:*
 
@@ -33,6 +37,3 @@
   🔒 [ • _gerenciar grupo_ ]
   ➥ *$g-bot* 
   🔒 [ • _gerenciar bot_ ]
-
-
-
